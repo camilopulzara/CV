@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Links website</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      body {
+        height: 100vh;
+        background: url("https://www.digitalbizmagazine.com/wp-content/uploads/2018/05/figura-.jpg");
+        background-size: cover;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+      }
+      button {
+        height: 3.0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        font-size: 1.0rem;
+        gap: .5rem;
+        width: 20rem;
+        padding: 0 1rem;
+        border-radius: 8rem;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        background-color: transparent;
+      }
+      main {
+        height: 100%;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 1.5rem;
+        color: #000000; /* Cambiar el color del nombre */;
+      }
+      .columnCenter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .containerImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        padding: 1rem;
+        background-color: rgb(0, 0, 0);
+        border-radius: 80%;
+        overflow: hidden;
+      }
+      .containerButtons {
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .icon {
+        font-size: 1rem;
+      }
+      .shape {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #f3f2f3;
+        opacity: .15;
+        z-index: -1;
+        background: -webkit-linear-gradient(to right, #cdcad3, #d7d2db);
+        background: linear-gradient(to right, #dedce2, #d6d3da);
+      }
+      @media (hover:hover) {
+        button:hover {
+          background-color: #dd111138;
+          opacity: .7;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shape"></div>
+    <main class="columnCenter">
+      <div class="containerImage">
+        <img src="https://avatars.githubusercontent.com/u/84820175?v=4" alt="Ícono de Descompilados" title="Descompilados" width="120">
+      </div>
+      <h1>Camilo Pulzara
+        <img src="https://cdn-icons-png.flaticon.com/512/6364/6364343.png" alt="" width="15">
+      </h1>
+      <section class="containerButtons columnCenter">
+        <a href="https://github.com/camilopulzara?tab=repositories"> 
+          <button>
+            <span class="icon">💼</span>
+            <p>Mi portafolio</p>
+          </button>
+        </a>
+        <!-- Botón para LinkedIn con ícono -->
+        <a href="https://www.linkedin.com/in/camilopulzara/" target="_blank"> 
+          <button>
+            <span class="icon"><i class="fab fa-linkedin"></i></span> 
+            <p>LinkedIn</p>
+          </button>
+        </a>
+        <a href="https://drive.google.com/file/d/1LPOYwX_vNRcDdYSlOu7cRTpiiERlGtFu/view?usp=drive_link" download>
+          <button>
+            <span class="icon">🔗</span>
+            <p>Descargar CV</p>
+          </button>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
